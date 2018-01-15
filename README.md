@@ -32,9 +32,10 @@ android support library 推出的ToolBar拓展性很高，也是官方代替Acti
         <version>1.0.1</version>
     </dependency>
    ```
+   
  * 下载代码
-   * 1.下载layout依赖包，以module方式导入项目
-   * 2.将layout中的TitleBar和res->values->attr中的TitleBar自定义属性copy到相应位置
+    * 下载layout依赖包，以module方式导入项目 
+    * 将layout中的TitleBar和res->values->attr中的TitleBar自定义属性copy到相应位置
    
 
 #### 全局配置
