@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.loper7.titlebarsimple.MainActivity">
+
+    <com.loper7.layout.TitleBar
+        android:id="@+id/main_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tBackgroundColor="@color/colorPrimary"
+        app:tMenuImage="@mipmap/ic_menu_white"
+        app:tTitleText="TITLEBAR"
+        app:tTitleTextColor="@color/colorTextWhite"
+        app:tTitleTextSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_titleCenter"
+            style="@style/style_btn_accent"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="标题居中" />
+
+        <TextView
+            android:id="@+id/tv_titleRolling"
+            style="@style/style_btn_accent"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="标题滚动" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/tv_titleRipple"
+            style="@style/style_btn_accent"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="水波纹效果" />
+
+        <TextView
+            android:id="@+id/tv_titleBorder"
+            style="@style/style_btn_accent"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="底部分割线" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <TextView
+            android:id="@+id/tv_titleBackAnim"
+            style="@style/style_btn_accent"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="返回动画" />
+    </LinearLayout>
+
+</LinearLayout>

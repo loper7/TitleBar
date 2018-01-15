@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleBar">
+        <attr name="tCenterTitle" format="boolean" />
+        <attr name="tBackImage" format="reference" />
+        <attr name="tPadding" format="dimension" />
+        <attr name="tTitleTextSize" format="dimension" />
+        <attr name="tTitleTextColor" format="color" />
+        <attr name="tTitleText" format="string" />
+        <attr name="tMenuTextSize" format="dimension" />
+        <attr name="tMenuTextColor" format="color" />
+        <attr name="tMenuImage" format="reference" />
+        <attr name="tMenuText" format="string" />
+        <attr name="tUseRipple" format="boolean" />
+        <attr name="tBackgroundColor" format="color" />
+        <attr name="tBorderColor" format="color" />
+        <attr name="tShowBorder" format="boolean" />
+        <attr name="tBorderWidth" format="dimension" />
+        <attr name="tTitleEllipsize" format="enum">
+            <enum name="start" value="0" />
+            <enum name="end" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="marquee" value="3" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>
