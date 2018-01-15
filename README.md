@@ -7,7 +7,7 @@ android support library 推出的ToolBar拓展性很高，也是官方代替Acti
 
 ## 截图
 ![](https://github.com/loperSeven/TitleBar/blob/master/img/mv.gif)
-ps：MIUI系统默认的跳转和代码设置的跳转动画，刚好一样所以看不出来效果。
+###### ps：MIUI系统默认的跳转和代码设置的跳转动画，刚好一样所以看不出来效果。
 
 ## 特性
 
