@@ -7,6 +7,7 @@ android support library 推出的ToolBar拓展性很高，也是官方代替Acti
 
 ## 截图
 ![](https://github.com/loperSeven/TitleBar/blob/master/img/mv.gif)
+ps：MIUI系统默认的跳转和代码设置的跳转动画，刚好一样所以看不出来效果。
 
 ## 特性
 
@@ -55,7 +56,7 @@ android support library 推出的ToolBar拓展性很高，也是官方代替Acti
                 .setBorderWidth(getApplicationContext(), 0.6f)
                 .setActivityBackAnim(R.anim.activity_backward_enter, R.anim.activity_backward_exit);
 ```
-以上代码为设置TitleBar的默认属性，设置后则不用在xml或代码中重复设置，再次调用设置可覆盖之前设置，可在项目任一地方使用，前提是在你的使用titleBar之前: smile:，建议放在启动页或者Application中。（当其中某一项不满足某个场景时可在xml中或者代码中直接设置覆盖，不会影响项目中其他titleBar）
+以上代码为设置TitleBar的默认属性，可选择性设置也可不设置，设置后则不用在xml或代码中重复设置，再次调用设置可覆盖之前设置，可在项目任一地方使用，前提是在你的使用titleBar之前: smile:，建议放在启动页或者Application中。（当其中某一项不满足某个场景时可在xml中或者代码中直接设置覆盖，不会影响项目中其他titleBar）
 
 
 #### xml
