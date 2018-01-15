@@ -6,5 +6,5 @@ android support library 推出的ToolBar拓展性很高，也是官方代替Acti
 但是在日常开发中，我们用不到这些东西，也正是因为这样，才自己写了个TitleBar。
 
 ## 截图
-![baidu](http://www.baidu.com/img/bdlogo.gif)
+![](https://github.com/loperSeven/TitleBar/blob/master/img/mv.gif)
 
