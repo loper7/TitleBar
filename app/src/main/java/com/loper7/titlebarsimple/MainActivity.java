@@ -41,11 +41,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
             public void onMenuClick() {
                 Intent intent = new Intent();
                 intent.setAction("android.intent.action.VIEW");
-                Uri content_url = Uri.parse("https://www.baidu.com");
+                Uri content_url = Uri.parse("https://github.com/loperSeven/TitleBar");
                 intent.setData(content_url);
                 startActivity(intent);
             }
         });
+
+
     }
 
     @Override

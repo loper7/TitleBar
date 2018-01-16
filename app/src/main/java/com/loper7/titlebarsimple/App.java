@@ -29,7 +29,9 @@ public class App extends Application {
                 .setTitleEllipsize(TextUtils.TruncateAt.MARQUEE)
                 .setBackgroundColor(Color.WHITE)
                 .setBorderColor(ContextCompat.getColor(getApplicationContext(), R.color.colorBorder))
-                .setShowBorder(false);
+                .setShowBorder(false)
+                .setBorderWidth(getApplicationContext(), 0.6f)
+                .setActivityBackAnim(R.anim.activity_backward_enter, R.anim.activity_backward_exit);
 
     }
 }
