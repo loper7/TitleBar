@@ -102,16 +102,14 @@ Name | Param | remark
 ------------ | ------------- | -------------
 setBackImageDrawable | `setBackImageDrawable(Drawable drawable)` | 设置返回按钮图片
 setBackImageResource | `setBackImageResource(@DrawableRes int resId)` | 设置返回按钮图片
-setTitleText | `setTitleText(String title)
-setTitleText(@StringRes int resId)` | 设置标题文字
+setTitleText | `setTitleText(String title),setTitleText(@StringRes int resId)` | 设置标题文字
 setTitleTextColor | `setTitleTextColor(@ColorInt int color)` | 设置标题文字颜色
 setTitleTextSize | `setTitleTextSize(@Dimension int sp)` | 设置标题文字大小
 setCenterTitle | `setCenterTitle(boolean isCenterTitle)` | 设置标题显示模式（true:居中显示 false:局左显示）
 setTitleEllipsize | `setTitleEllipsize(TextUtils.TruncateAt ellipsize)` | 设置标题ellipsize属性
 setMenuImageDrawable | `setMenuImageDrawable(Drawable drawable)` | 设置菜单按钮图片（菜单图片和文字不能同时出现，图片优先于文字显示，此逻辑若有问题请提出Issues，后面修改）
 setMenuImageResource | `setMenuImageResource(@DrawableRes int resId)` | 设置菜单按钮图片
-setMenuText | `setMenuText(String menuText)
-setMenuText(@StringRes int resId)` | 设置菜单文字
+setMenuText | `setMenuText(String menuText),setMenuText(@StringRes int resId)` | 设置菜单文字
 setMenuTextColor | `setMenuTextColor(@ColorInt int color)` | 设置菜单文字颜色
 setMenuTextSize | `setMenuTextSize(@Dimension int sp)` | 设置菜单文字大小
 setActivityAnim | `setActivityAnim(@AnimRes int enter, @AnimRes int exit)` | 设置activity进入退出动画
