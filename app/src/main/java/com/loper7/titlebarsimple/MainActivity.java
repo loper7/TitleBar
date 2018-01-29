@@ -1,10 +1,12 @@
 package com.loper7.titlebarsimple;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.TextView;
 
@@ -39,11 +41,27 @@ public class MainActivity extends Activity implements View.OnClickListener {
         titleBar.setOnMenuListener(new TitleBar.OnMenuListener() {
             @Override
             public void onMenuClick() {
-                Intent intent = new Intent();
-                intent.setAction("android.intent.action.VIEW");
-                Uri content_url = Uri.parse("https://github.com/loperSeven/TitleBar");
-                intent.setData(content_url);
-                startActivity(intent);
+                new AlertDialog.Builder(MainActivity.this)
+                        .setTitle("温馨提示")
+                        .setMessage("您将前往浏览器应用，是否确认前往？")
+                        .setNegativeButton("不，算了", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.dismiss();
+                            }
+                        }).setPositiveButton("是的", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                        Intent intent = new Intent();
+                        intent.setAction("android.intent.action.VIEW");
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        Uri content_url = Uri.parse("https://github.com/loperSeven/TitleBar");
+                        intent.setData(content_url);
+                        startActivity(intent);
+                    }
+                }).show();
+
             }
         });
 
