@@ -25,6 +25,7 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 /**
@@ -598,6 +599,56 @@ public class TitleBar extends RelativeLayout {
 
 
     /**
+     * 获取返回view
+     *
+     * @return backView
+     */
+    public ImageView getBackView() {
+        if (ivBack == null)
+            new NullPointerException("back imageView is null,may be titBar is no initialization");
+
+        return ivBack;
+    }
+
+
+    /**
+     * 获取标题view
+     *
+     * @return titleView
+     */
+    public TextView getTitleView() {
+        if (tvTitle == null)
+            new NullPointerException("title textView is null,may be titBar is no initialization");
+
+        return tvTitle;
+    }
+
+    /**
+     * 获取菜单view
+     *
+     * @return menuView
+     */
+    public TextView getMenuView() {
+        if (tvMenu == null)
+            new NullPointerException("menuView textView is null,may be titBar is no initialization");
+
+        return tvMenu;
+    }
+
+    /**
+     * 获取底线view
+     *
+     * @return BorderView
+     */
+    public View getBorderView() {
+        if (border == null)
+            new NullPointerException("borderView View is null,may be titBar is no initialization");
+
+        return border;
+    }
+    
+
+    /**
      * 获取全局配置的class
      *
      * @return
@@ -617,6 +668,9 @@ public class TitleBar extends RelativeLayout {
      * @return
      */
     private float getTitleTextWidth(String text, int textSize) {
+        if (TextUtils.isEmpty(text))
+            return 0;
+
         TextPaint paint = tvTitle.getPaint();
         paint.setTextSize(textSize);
         return paint.measureText(text);

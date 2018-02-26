@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
+import android.widget.ScrollView;
 
 import com.jaeger.library.StatusBarUtil;
 import com.loper7.layout.TitleBar;
