@@ -30,7 +30,7 @@ android support library 推出的ToolBar拓展性很高，也是官方代替Acti
    <dependency>
         <groupId>com.github.loperSeven</groupId>
         <artifactId>TitleBar</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
     </dependency>
    ```
    
