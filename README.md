@@ -22,7 +22,7 @@ android support library 推出的ToolBar拓展性很高，也是官方代替Acti
  * Gradle
    ```Java
    dependencies {
-            compile 'com.github.loperSeven:TitleBar:1.0.2'
+            compile 'com.github.loperSeven:TitleBar:1.0.3'
     }
     ```
  * maven
@@ -49,6 +49,7 @@ android support library 推出的ToolBar拓展性很高，也是官方代替Acti
                 .setPadding(getApplicationContext(), 16)
                 .setCenterTitle(false)
                 .setUseRipple(false)
+                .setTitleTextBold(true)
                 .setTitleEllipsize(TextUtils.TruncateAt.MARQUEE)
                 .setBackgroundColor(Color.WHITE)
                 .setBorderColor(ContextCompat.getColor(getApplicationContext(), R.color.colorBorder))
@@ -68,6 +69,7 @@ android support library 推出的ToolBar拓展性很高，也是官方代替Acti
         app:tBackgroundColor="@color/colorPrimary"
         app:tMenuImage="@mipmap/ic_menu_white"
         app:tTitleText="TITLEBAR"
+        app:tTitleTextBold="true"
         app:tTitleTextColor="@color/colorTextWhite"
         app:tTitleTextSize="16sp" />
 ```
@@ -145,6 +147,7 @@ tBorderColor | `color` | 设置下划线颜色
 tShowBorder | `boolean` | 设置是否显示下划线
 tBorderWidth | `dimension` | 设置下划线宽度
 tTitleEllipsize | `enum` | 设置标题过长时显示方式
+tTitleTextBold | `boolean` | 设置标题字体是否加粗
 
 
 ## 写在最后
