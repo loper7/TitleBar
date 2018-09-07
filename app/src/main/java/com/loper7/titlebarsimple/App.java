@@ -26,6 +26,7 @@ public class App extends Application {
                 .setPadding(getApplicationContext(), 16)
                 .setCenterTitle(false)
                 .setUseRipple(false)
+                .setTitleTextBold(true)
                 .setTitleEllipsize(TextUtils.TruncateAt.MARQUEE)
                 .setBackgroundColor(Color.WHITE)
                 .setBorderColor(ContextCompat.getColor(getApplicationContext(), R.color.colorBorder))

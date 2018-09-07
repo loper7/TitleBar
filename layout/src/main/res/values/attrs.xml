@@ -16,6 +16,7 @@
         <attr name="tBackgroundColor" format="color" />
         <attr name="tBorderColor" format="color" />
         <attr name="tShowBorder" format="boolean" />
+        <attr name="tTitleTextBold" format="boolean" />
         <attr name="tBorderWidth" format="dimension" />
         <attr name="tTitleEllipsize" format="enum">
             <enum name="start" value="0" />

@@ -14,6 +14,7 @@
         app:tBackgroundColor="@color/colorPrimary"
         app:tMenuImage="@mipmap/ic_menu_white"
         app:tTitleText="TITLEBAR"
+        app:tTitleTextBold="true"
         app:tTitleTextColor="@color/colorTextWhite"
         app:tTitleTextSize="16sp" />
 

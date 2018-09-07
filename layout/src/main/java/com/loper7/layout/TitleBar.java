@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.AnimRes;
 import android.support.annotation.ColorInt;
@@ -50,6 +51,7 @@ public class TitleBar extends RelativeLayout {
     private static boolean defaultCenterTitle;
     private static boolean defaultUseRipple;
     private static boolean defaultShowBorder;
+    private static boolean defaultTitleTextBold;
     private static TextUtils.TruncateAt defaultTitleEllipsize = TextUtils.TruncateAt.MARQUEE;
     private static int defaultTitleTextColor;
     private static int defaultMenuTextColor;
@@ -62,6 +64,7 @@ public class TitleBar extends RelativeLayout {
 
     private boolean isCenterTitle;
     private boolean isUseRipple;
+    private boolean titleTextBold;
     private boolean isShowBorder;
     private TextUtils.TruncateAt titleEllipsize;
 
@@ -139,6 +142,7 @@ public class TitleBar extends RelativeLayout {
         borderColor = typedArray.getColor(R.styleable.TitleBar_tBorderColor, defaultBorderColor);
         isShowBorder = typedArray.getBoolean(R.styleable.TitleBar_tShowBorder, defaultShowBorder);
         borderWidth = typedArray.getDimensionPixelSize(R.styleable.TitleBar_tBorderWidth, defaultBorderWidth);
+        titleTextBold = typedArray.getBoolean(R.styleable.TitleBar_tTitleTextBold, defaultTitleTextBold);
 
         int ellipsize = typedArray.getInt(R.styleable.TitleBar_tTitleEllipsize, -1);
         switch (ellipsize) {
@@ -257,6 +261,8 @@ public class TitleBar extends RelativeLayout {
         tvTitle.setText(titleText);
         tvTitle.setTextColor(titleTextColor);
         tvTitle.setSingleLine(true);
+        TextPaint paint = tvTitle.getPaint();
+        paint.setFakeBoldText(titleTextBold);
         this.setTitleEllipsize(titleEllipsize);
         this.setCenterTitle(isCenterTitle);
         tvTitle.setOnClickListener(new OnClickListener() {
@@ -646,7 +652,7 @@ public class TitleBar extends RelativeLayout {
 
         return border;
     }
-    
+
 
     /**
      * 获取全局配置的class
@@ -845,6 +851,11 @@ public class TitleBar extends RelativeLayout {
 
         public Config setBorderWidth(Context context, float dp) {
             defaultBorderWidth = dip2px(context, dp);
+            return mConfig;
+        }
+
+        public Config setTitleTextBold(boolean isBold) {
+            defaultTitleTextBold = isBold;
             return mConfig;
         }
 
