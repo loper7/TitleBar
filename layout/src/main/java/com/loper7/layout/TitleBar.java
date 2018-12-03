@@ -53,9 +53,9 @@ public class TitleBar extends RelativeLayout {
     private static boolean defaultShowBorder;
     private static boolean defaultTitleTextBold;
     private static TextUtils.TruncateAt defaultTitleEllipsize = TextUtils.TruncateAt.MARQUEE;
-    private static int defaultTitleTextColor;
-    private static int defaultMenuTextColor;
-    private static int defaultBorderColor;
+    private static int defaultTitleTextColor = Color.parseColor("#333333");
+    private static int defaultMenuTextColor = Color.parseColor("#666666");
+    private static int defaultBorderColor = Color.parseColor("#F2F2F2");
 
     private static int defaultBackGroundColor;
 
