@@ -22,7 +22,7 @@ android support library 推出的ToolBar拓展性很高，也是官方代替Acti
  * Gradle
    ```Java
    dependencies {
-            compile 'com.github.loperSeven:TitleBar:1.0.3'
+            compile 'com.github.loperSeven:TitleBar:1.0.4'
     }
     ```
  * maven
